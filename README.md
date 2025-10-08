@@ -4,6 +4,9 @@
 ## Полезные сайты:
 
 - [Learn Git Branching для изучения работы с git](https://learngitbranching.js.org/?locale=ru_RU)
+- [leetcode](https://leetcode.com/explore)
+- [Тренажёр для прокачивания навыков разработки // CodeRun](https://coderun.yandex.ru)
+- [Полезные материалы yandex](https://yandex.ru/yaintern/schools/useful)
 
 ## Полезные репозитории и Git аккаунты:##
 
@@ -15,6 +18,9 @@
 
 - [Roadmap для разных ЯП](https://github.com/kamranahmedse/developer-roadmap)
 
+- [Оформление md файлов](https://gist.github.com/lorddead12/f2214490c9404683c0ee9eb9d3a6e389)
+
 ### Аккаунты:
+
 
 
