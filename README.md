@@ -20,4 +20,5 @@
 
 ### Мои решения задач:
 
-- [Stepic](https://stepik.org/learn)
+- [Stepic](https://github.com/Hohrandrey/self-study/tree/main/Stepic)
+
