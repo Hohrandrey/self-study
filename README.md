@@ -3,7 +3,7 @@
 
 ## Полезные сайты:
 
-- [Для изучения работы с git](https://learngitbranching.js.org/?locale=ru_RU)
+- [Learn Git Branching для изучения работы с git](https://learngitbranching.js.org/?locale=ru_RU)
 
 ## Полезные репозитории и Git аккаунты:##
 
@@ -16,4 +16,5 @@
 - [Roadmap для разных ЯП](https://github.com/kamranahmedse/developer-roadmap)
 
 ### Аккаунты:
+
 
