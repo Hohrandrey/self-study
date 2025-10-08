@@ -7,6 +7,7 @@
 - [leetcode](https://leetcode.com/explore)
 - [Тренажёр для прокачивания навыков разработки // CodeRun](https://coderun.yandex.ru)
 - [Полезные материалы yandex](https://yandex.ru/yaintern/schools/useful)
+- [Stepic](https://stepik.org/learn)
 
 ## Полезные репозитории и Git аккаунты:##
 
@@ -21,6 +22,7 @@
 - [Оформление md файлов](https://gist.github.com/lorddead12/f2214490c9404683c0ee9eb9d3a6e389)
 
 ### Аккаунты:
+
 
 
 
