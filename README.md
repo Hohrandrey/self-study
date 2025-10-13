@@ -9,7 +9,7 @@
 - [Полезные материалы yandex](https://yandex.ru/yaintern/schools/useful)
 - [Платформа для обучения Stepic](https://stepik.org/learn)
 
-## Полезные репозитории и Git аккаунты:##
+## Полезные репозитории и Git аккаунты:
 
 ### Репозитории:
 
@@ -21,4 +21,5 @@
 ### Мои решения задач:
 
 - [Stepic](https://github.com/Hohrandrey/self-study/tree/main/Stepic)
+
 
