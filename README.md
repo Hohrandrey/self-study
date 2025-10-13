@@ -8,6 +8,7 @@
 - [Тренажёр для прокачивания навыков разработки // CodeRun](https://coderun.yandex.ru)
 - [Полезные материалы yandex](https://yandex.ru/yaintern/schools/useful)
 - [Платформа для обучения Stepic](https://stepik.org/learn)
+- [Платформа для обучения Codewars](https://www.codewars.com/dashboard)
 
 ## Полезные репозитории и Git аккаунты:
 
@@ -21,5 +22,6 @@
 ### Мои решения задач:
 
 - [Stepic](https://github.com/Hohrandrey/self-study/tree/main/Stepic)
+
 
 
