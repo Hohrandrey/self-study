@@ -22,6 +22,8 @@
 ### Мои решения задач:
 
 - [Stepic](https://github.com/Hohrandrey/self-study/tree/main/Stepic)
+- [Codewars](https://github.com/Hohrandrey/self-study/tree/main/Codewars)
+
 
 
 
