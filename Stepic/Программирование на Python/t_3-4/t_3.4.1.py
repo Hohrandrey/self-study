@@ -1,11 +1,17 @@
 with open('dataset_3363_2.txt', 'r') as file:
-    line = file.readline().strip()
+    line = file.readline()
 
-res = {}
-for i in range(len(line)):
-    if line[i].type() == str:
-        int_len = 1
-        int_value = ''
-        while line[i + int_len].type() == int:
-            int_value.join(line[i + int_len])
-        print(int_value)
+res = ''
+i = 0
+
+while i < len(line):
+    char = line[i]
+    i+=1
+    num = ''
+    while i < len(line) and line[i].isdigit():
+        num += line[i]
+        i += 1
+    res += char * (int(num) if num else 1)
+
+with open('res_2.txt', 'w') as res_file:
+    res_file.write(res)
