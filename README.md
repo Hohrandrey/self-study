@@ -4,9 +4,9 @@
 ## Полезные сайты:
 
 - [Learn Git Branching для изучения работы с git](https://learngitbranching.js.org/?locale=ru_RU)
-- [Платформа для обучения leetcode](https://leetcode.com/explore)
 - [Тренажёр для прокачивания навыков разработки // CodeRun](https://coderun.yandex.ru)
 - [Полезные материалы yandex](https://yandex.ru/yaintern/schools/useful)
+- [Платформа для обучения leetcode](https://leetcode.com/explore)
 - [Платформа для обучения Stepic](https://stepik.org/learn)
 - [Платформа для обучения Codewars](https://www.codewars.com/dashboard)
 
@@ -23,6 +23,7 @@
 
 - [Stepic](https://github.com/Hohrandrey/self-study/tree/main/Stepic)
 - [Codewars](https://github.com/Hohrandrey/self-study/tree/main/Codewars)
+
 
 
 
