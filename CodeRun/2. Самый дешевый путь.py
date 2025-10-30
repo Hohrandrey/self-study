@@ -1,7 +1,6 @@
 def main():
     n, m = map(int, input().split())
     matrix = []
-    min_way = 10000
 
     for i in range(n):
         matrix.append(list(map(int, input().split())))
