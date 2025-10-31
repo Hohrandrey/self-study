@@ -13,18 +13,34 @@ cards_val = {
 inp = input().split()
 koz = input()
 
-if inp[0][-1] == inp[1][-1]:
-    if cards_val[inp[0][0]] > cards_val[inp[1][0]]:
+c1 = inp[0]
+c2 = inp[1]
+
+s1 = inp[0][-1]
+s2 = inp[1][-1]
+
+if len(c1) == 3:
+    val1 = 10
+else:
+    val1 = cards_val[c1[0]]
+
+if len(c2) == 3:
+    val2 = 10
+else:
+    val2 = cards_val[c2[0]]
+
+if s1 == s2:
+    if val1 > val2:
         print('First')
-    elif cards_val[inp[0][0]] < cards_val[inp[1][0]]:
+    elif val1 < val2:
         print('Second')
     else:
         print('Error')
 else:
-    if (koz not in inp[0][-1]) and (koz not in inp[1][-1]):
+    if (koz not in s1) and (koz not in s2):
         print('Error')
     else:
-        if koz in inp[0][-1]:
+        if koz in s1:
             print('First')
         else:
             print('Second')
