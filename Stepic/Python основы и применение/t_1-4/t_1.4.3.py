@@ -1,4 +1,4 @@
-st = {}
+st = { 'global' : {}}
 
 def create(namespace, parent):
     pass
