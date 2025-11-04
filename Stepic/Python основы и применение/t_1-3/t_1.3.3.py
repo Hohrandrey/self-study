@@ -1,8 +1,12 @@
-def closest_mod_5(x):
-    y = x
-    while y % 5 != 0:
-        y += 1
-    return y
+def s(a, *vs, b=10):
+    res = a + b
+    for v in vs:
+        res += v
+    return res
+
+print(s(11, 10))
+print(s(11, 10, b=10))
+print(s(5, 5, 5, 5, 1))
 
 
-print(closest_mod_5(6))
+print(s(21),s(11, 10, b=10),s(11, b=20),s(11, 10),s(5, 5, 5, 5, 1))

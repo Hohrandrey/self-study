@@ -1,12 +1,10 @@
-def s(a, *vs, b=10):
-    res = a + b
-    for v in vs:
-        res += v
-    return res
+def h():
+  print(12)
 
-print(s(11, 10))
-print(s(11, 10, b=10))
-print(s(5, 5, 5, 5, 1))
+def f():
+  g(h)
 
+def g(a):
+  a()
 
-print(s(21),s(11, 10, b=10),s(11, b=20),s(11, 10),s(5, 5, 5, 5, 1))
+g(f)
