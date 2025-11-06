@@ -1,9 +1,19 @@
 class MoneyBox:
     def __init__(self, capacity):
-        # конструктор с аргументом – вместимость копилки
+        self.count = 0
+        self.capacity = capacity
 
     def can_add(self, v):
-        # True, если можно добавить v монет, False иначе
+        if self.capacity - self.count - v >= 0:
+            return True
+        return False
 
     def add(self, v):
-        # положить v монет в копилку
+        if self.can_add(v):
+            self.count += v
+
+kap1 = MoneyBox(10)
+kap1.add(7)
+kap1.add(5)
+kap1.add(100)
+print(kap1.count)
