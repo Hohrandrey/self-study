@@ -1,4 +1,4 @@
-st = 'А роза упала на лапу Азора'
+st = input()
 
 def is_palindrome(text: str) -> bool:
     text = text.replace(' ', '').lower()
