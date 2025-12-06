@@ -8,8 +8,8 @@ class Person:
         print(f"Меня зовут {self.name}, мне {self.age} лет.")
 
 
-name = input("Как вас зовут?")
-age = int(input("Сколько вам лет?"))
+name = input()
+age = int(input())
 
 me = Person(name, age)
 me.introduce()
