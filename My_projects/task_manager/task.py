@@ -8,4 +8,6 @@ class Task():
         pass
 
 
-    @staticmethod from_dict(d: dict) -> Task:
+    @staticmethod
+    def from_dict(d: dict) -> Task:
+        pass
