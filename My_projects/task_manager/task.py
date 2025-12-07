@@ -1,4 +1,4 @@
-class Task():
+class Task:
     def __init__(self, title: str, priority: int):
         self.title = title
         self.priority = priority
@@ -9,5 +9,5 @@ class Task():
 
 
     @staticmethod
-    def from_dict(d: dict) -> Task:
-        pass
+    def from_dict(d: dict) -> "Task":
+        return Task(**d)
