@@ -2,3 +2,4 @@
 *.iml
 /.idea
 /Stepik/Быстрый старт в FastAPI Python/2_1/__pycache__
+*.pyc
