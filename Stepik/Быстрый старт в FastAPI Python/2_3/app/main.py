@@ -3,13 +3,13 @@ from .models.Feedback import Feedback
 
 app = FastAPI()
 
-users = []
+feedbacks = []
 
 @app.post("/feedback")
 async def post(feedback: Feedback):
-    users.append({"name": feedback.name, "message": feedback.message})
-    return {"message": f"Feedback received. Thank you, {feedback.name}."}
+    feedbacks.append({"name": feedback.name, "message": feedback.message})
+    return {"message": f"Спасибо, {feedback.name}! Ваш отзыв сохранён."}
 
-@app.get("/users_feed")
+@app.get("/users_feeds")
 async def show_feedback():
-    return users
+    return feedbacks
