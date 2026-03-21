@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from .models.Feedback import Feedback
+from .models.models import Feedback
 
 app = FastAPI()
 
