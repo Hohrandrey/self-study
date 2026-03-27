@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from .models.models import UserCreate
 
 app = FastAPI()
+#Задание по программированию базового уровня
 """
 users = []
 
@@ -11,6 +12,7 @@ async def create_user(user: UserCreate):
     return user
 """
 
+#Задача программирования повышенной сложности
 sample_product_1 = {
     "product_id": 123,
     "name": "Smartphone",
