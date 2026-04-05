@@ -1,8 +1,7 @@
-from fastapi import FastAPI, Response, Cookie
+"""from fastapi import FastAPI, Response, Cookie
 from .models.login_model import user_login
 from uuid import uuid4
 from .encrypt_decrypt import encrypt_decrypt
-
 
 app = FastAPI()
 
@@ -42,4 +41,4 @@ async def profile(session_token=Cookie(None)):
         for elem in db:
             if elem["user_id"] == user_id:
                 return {"username":elem["username"],"password": elem["password"]}
-    return {"message": "Unauthorized"}
+    return {"message": "Unauthorized"}"""
