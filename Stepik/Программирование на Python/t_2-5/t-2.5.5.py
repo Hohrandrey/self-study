@@ -9,4 +9,4 @@ for s in se:
         res.append(s)
 
 for r in res:
-    print(r, end=' ')
+    print(r, end=" ")

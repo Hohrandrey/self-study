@@ -11,6 +11,7 @@ class Writer:
 class Artist(Painter, Writer):
     pass
 
+
 artist = Artist()
 artist.paint()
 artist.write()

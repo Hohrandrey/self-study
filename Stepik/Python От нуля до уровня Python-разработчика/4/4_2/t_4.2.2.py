@@ -9,6 +9,7 @@ class Company:
     def get_company(cls):
         return f"Моя компания называется - {cls.company_name}"
 
+
 name = input()
 company = Company
 company.set_company(name)

@@ -1,13 +1,13 @@
 lst = input().split()
-x  = input()
+x = input()
 
-res  = []
+res = []
 
 for i in range(len(lst)):
-    if lst[i]  == x:
+    if lst[i] == x:
         res.append(str(i))
 
 if len(res) != 0:
-    print(' '.join(res))
+    print(" ".join(res))
 else:
-    print('Отсутствует')
+    print("Отсутствует")

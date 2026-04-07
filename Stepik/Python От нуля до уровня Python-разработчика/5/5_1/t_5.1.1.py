@@ -1,5 +1,5 @@
 def even_numbers(n):
-    for num in range(n+1):
+    for num in range(n + 1):
         if num % 2 == 0:
             yield num
 

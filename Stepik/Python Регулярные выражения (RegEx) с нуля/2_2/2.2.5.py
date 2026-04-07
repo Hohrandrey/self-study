@@ -1,7 +1,7 @@
 import re
 
 string = input()
-res = re.match(r'[+.,-]', string)
+res = re.match(r"[+.,-]", string)
 
 if res:
     print("Symbol found")

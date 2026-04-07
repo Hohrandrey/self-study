@@ -12,6 +12,7 @@ class MoneyBox:
         if self.can_add(v):
             self.count += v
 
+
 kap1 = MoneyBox(10)
 kap1.add(7)
 kap1.add(5)

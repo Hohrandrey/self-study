@@ -1,6 +1,5 @@
 import re
 
-
 string = input()
 rule = r"yes"
 

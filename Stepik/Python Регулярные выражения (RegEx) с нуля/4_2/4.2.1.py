@@ -1,5 +1,4 @@
-import re,sys
-
+import re, sys
 
 string = sys.stdin.read()
 rule = r"\s+"

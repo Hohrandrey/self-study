@@ -5,6 +5,7 @@ def is_valid_triangle(a: float, b: float, c: float) -> bool:
         return False
     return False
 
+
 a = int(input())
 b = int(input())
 c = int(input())

@@ -3,7 +3,6 @@ class Person:
         self.name = name
         self.age = age
 
-
     def introduce(self):
         print(f"Меня зовут {self.name}, мне {self.age} лет.")
 

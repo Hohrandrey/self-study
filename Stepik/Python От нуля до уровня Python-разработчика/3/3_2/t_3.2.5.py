@@ -1,4 +1,4 @@
-sp = 'aeiouy'
+sp = "aeiouy"
 inp = input()
 count = 0
 for el in sp:

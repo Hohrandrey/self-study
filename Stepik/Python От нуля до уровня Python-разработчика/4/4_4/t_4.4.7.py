@@ -3,7 +3,6 @@ class TraceBlock:
         print("Вход в блок")
         return self
 
-
     def __exit__(self, exc_type, exc, tb):
         print("Выход из блока")
 

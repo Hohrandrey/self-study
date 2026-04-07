@@ -9,8 +9,8 @@ for i in range(len(original)):
 encrypt = input()
 decrypt = input()
 
-encrypted = ''
-decrypted = ''
+encrypted = ""
+decrypted = ""
 
 for symb in encrypt:
     encrypted += dic[symb]

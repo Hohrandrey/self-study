@@ -9,6 +9,5 @@ def load_tasks(path: str) -> list[Task]:
         return []
 
 
-
 def save_tasks(path: str, tasks: list[Task]) -> None:
     pass

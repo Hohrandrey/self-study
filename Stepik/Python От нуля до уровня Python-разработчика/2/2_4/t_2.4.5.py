@@ -1,2 +1,2 @@
 s = input().lower().split()
-print('_'.join(s))
+print("_".join(s))

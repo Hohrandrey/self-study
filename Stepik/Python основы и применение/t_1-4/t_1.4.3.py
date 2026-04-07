@@ -1,4 +1,4 @@
-st = {'global': {"parent": None, "variables": set()}}
+st = {"global": {"parent": None, "variables": set()}}
 
 
 def create(namespace, parent):

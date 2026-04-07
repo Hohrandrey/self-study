@@ -8,7 +8,7 @@ class Playable(Protocol):
 
 class MusicTrack:
     def play(self, name):
-        print(f'Играет трек: {name}')
+        print(f"Играет трек: {name}")
 
 
 class Video:

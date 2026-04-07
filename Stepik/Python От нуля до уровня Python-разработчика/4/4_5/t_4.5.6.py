@@ -3,7 +3,6 @@ class Employee:
         self.name = name
         self.salary = salary
 
-
     def calculate_salary(self):
         return self.salary
 
@@ -15,7 +14,7 @@ class Developer(Employee):
 
 class Manager(Employee):
     def calculate_salary(self):
-       return super().calculate_salary() * 1.3
+        return super().calculate_salary() * 1.3
 
 
 class TechLead(Developer, Manager):

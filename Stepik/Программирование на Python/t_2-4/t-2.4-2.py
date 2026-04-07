@@ -1,6 +1,6 @@
 s = input()
 
-result = ''
+result = ""
 current = s[0]
 count = 1
 

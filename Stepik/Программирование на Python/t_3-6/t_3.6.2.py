@@ -1,6 +1,6 @@
 import requests
 
-with open('dataset_3378_3.txt', 'r') as f:
+with open("dataset_3378_3.txt", "r") as f:
     first_url = f.readline().strip()
 
 base_url = "https://stepik.org/media/attachments/course67/3.6.3/"
@@ -20,5 +20,5 @@ while True:
         current_url = base_url + next_filename
         print(f"Переходим к файлу: {next_filename}")
 
-with open('result.txt', 'w') as f:
+with open("result.txt", "w") as f:
     f.write(content)

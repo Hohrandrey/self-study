@@ -6,13 +6,13 @@ def solve():
     visited[(x, y)] = visited.get((x, y), 0) + 1
 
     for command in program:
-        if command == 'U':
+        if command == "U":
             y += 1
-        elif command == 'D':
+        elif command == "D":
             y -= 1
-        elif command == 'R':
+        elif command == "R":
             x += 1
-        elif command == 'L':
+        elif command == "L":
             x -= 1
 
         visited[(x, y)] = visited.get((x, y), 0) + 1

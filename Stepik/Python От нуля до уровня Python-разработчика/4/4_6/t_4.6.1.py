@@ -12,6 +12,7 @@ class Triangle:
     def area(self):
         print("Площадь треугольника")
 
+
 objects = [Square(), Circle(), Triangle()]
 for obj in objects:
     obj.area()

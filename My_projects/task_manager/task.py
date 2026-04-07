@@ -3,10 +3,8 @@ class Task:
         self.title = title
         self.priority = priority
 
-
     def to_dict(self) -> dict:
         pass
-
 
     @staticmethod
     def from_dict(d: dict) -> "Task":

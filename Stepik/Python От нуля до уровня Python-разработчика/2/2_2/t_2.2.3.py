@@ -1,1 +1,1 @@
-print('Тип данных:', type(input()))
+print("Тип данных:", type(input()))

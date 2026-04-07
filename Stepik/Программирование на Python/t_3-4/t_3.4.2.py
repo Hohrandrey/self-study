@@ -1,6 +1,6 @@
 res = {}
 
-with open('dataset_3363_3.txt', 'r') as file:
+with open("dataset_3363_3.txt", "r") as file:
     line = file.read().lower().split()
 
 
@@ -9,7 +9,7 @@ for l in range(len(line)):
         res[line[l]] = line.count(line[l])
 
 m_v = 0
-res_key = 'zzzzzzzz'
+res_key = "zzzzzzzz"
 for key, val in res.items():
     if val > m_v:
         m_v = val

@@ -1,6 +1,6 @@
 n = int(input())
 
-chetverti  = [0, 0, 0, 0]
+chetverti = [0, 0, 0, 0]
 
 for _ in range(n):
     x, y = map(int, input().split())
@@ -13,7 +13,7 @@ for _ in range(n):
     elif x > 0 > y:
         chetverti[3] += 1
 
-print(f'Первая четверть: {chetverti[0]}')
-print(f'Вторая четверть: {chetverti[1]}')
-print(f'Третья четверть: {chetverti[2]}')
-print(f'Четвертая четверть: {chetverti[3]}')
+print(f"Первая четверть: {chetverti[0]}")
+print(f"Вторая четверть: {chetverti[1]}")
+print(f"Третья четверть: {chetverti[2]}")
+print(f"Четвертая четверть: {chetverti[3]}")

@@ -1,20 +1,25 @@
 class A:
-   def foo(self):
-      print("A")
+    def foo(self):
+        print("A")
+
 
 class B(A):
-   pass
+    pass
+
 
 class C(A):
-   def foo(self):
-      print("C")
+    def foo(self):
+        print("C")
+
 
 class D:
-   def foo(self):
-      print("D")
+    def foo(self):
+        print("D")
+
 
 class E(B, C, D):
-   pass
+    pass
+
 
 E().foo()
 print(E.mro())

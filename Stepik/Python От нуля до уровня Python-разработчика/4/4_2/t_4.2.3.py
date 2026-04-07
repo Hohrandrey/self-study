@@ -1,10 +1,11 @@
 class MathOperations:
     @staticmethod
     def square(x):
-        return x ** 2
+        return x**2
+
     @staticmethod
     def cube(x):
-        return x ** 3
+        return x**3
 
 
 x = int(input())
