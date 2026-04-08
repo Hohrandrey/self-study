@@ -1,4 +1,4 @@
-n, m  = map(int, input().split())
+n, m = map(int, input().split())
 
 matrics = []
 
@@ -9,10 +9,10 @@ res_matrix = matrics
 
 for i in range(n):
     for j in range(m):
-        if matrics[i][j] == '*':
-            res_matrix[i][j] = '*'
+        if matrics[i][j] == "*":
+            res_matrix[i][j] = "*"
         else:
-            res_matrix[i][j] = '1'
+            res_matrix[i][j] = "1"
 
 
 print(res_matrix)

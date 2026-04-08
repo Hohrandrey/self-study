@@ -8,9 +8,9 @@ class User:
 
 
 name1 = input()
-age1 =  int(input())
+age1 = int(input())
 name2 = input()
-age2 =  int(input())
+age2 = int(input())
 
 
 u1 = User(name1, age1)

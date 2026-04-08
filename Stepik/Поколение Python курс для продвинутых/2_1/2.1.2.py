@@ -1,7 +1,7 @@
 mass = float(input())
 height = float(input())
 
-imt = mass/height**2
+imt = mass / height**2
 
 if 18.5 <= imt <= 25:
     print("Оптимальная масса")

@@ -1,9 +1,9 @@
 from fastapi import FastAPI
+
 """
 from .models_app.easy_user_model import User
 """
 from .models_app.hard_user_model import User
-
 
 app = FastAPI()
 
@@ -26,7 +26,8 @@ async def read_user():
     return User
 """
 
-#задание экспериментального уровня
+
+# задание экспериментального уровня
 @app.post("/user")
 async def read_user(res: User):
     res = res.dict()

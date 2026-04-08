@@ -10,7 +10,7 @@ def validate_priority(x: str) -> int:
         case "3":
             return 3
         case _:
-            raise ValueError('Недопустимое значение')
+            raise ValueError("Недопустимое значение")
 
 
 def print_tasks(tasks: list[Task]) -> None:

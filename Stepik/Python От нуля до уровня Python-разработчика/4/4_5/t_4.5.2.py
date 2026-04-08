@@ -1,6 +1,6 @@
 class BaseLogger:
     def log(self):
-        print('Сообщение')
+        print("Сообщение")
 
 
 class FileLogger(BaseLogger):

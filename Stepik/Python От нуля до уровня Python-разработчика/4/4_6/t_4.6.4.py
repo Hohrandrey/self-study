@@ -16,6 +16,7 @@ class Superman:
 def make_fly(obj):
     obj.fly()
 
+
 b = Bird()
 a = Airplane()
 superman = Superman()

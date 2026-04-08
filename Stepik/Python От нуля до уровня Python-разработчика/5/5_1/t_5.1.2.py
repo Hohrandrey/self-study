@@ -7,6 +7,7 @@ def gen_fibonacci():
         prev, cur = cur, cur + prev
         yield cur
 
+
 count = 0
 for i in gen_fibonacci():
     print(i)

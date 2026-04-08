@@ -24,7 +24,7 @@ def solve():
         sys.stdout.write("0")
         return
 
-    INF = float('inf')
+    INF = float("inf")
     min_prefix = [INF] * K
     min_prefix[0] = 0
     global_min_val = 0

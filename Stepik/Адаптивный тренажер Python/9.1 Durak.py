@@ -1,13 +1,13 @@
 cards_val = {
-    '6' : 6,
-    '7' : 7,
-    '8' : 8,
-    '9' : 9,
-    '10' : 10,
-    'J' : 11,
-    'Q' : 12,
-    'K' : 13,
-    'A' : 14
+    "6": 6,
+    "7": 7,
+    "8": 8,
+    "9": 9,
+    "10": 10,
+    "J": 11,
+    "Q": 12,
+    "K": 13,
+    "A": 14,
 }
 
 inp = input().split()
@@ -31,16 +31,16 @@ else:
 
 if s1 == s2:
     if val1 > val2:
-        print('First')
+        print("First")
     elif val1 < val2:
-        print('Second')
+        print("Second")
     else:
-        print('Error')
+        print("Error")
 else:
     if (koz not in s1) and (koz not in s2):
-        print('Error')
+        print("Error")
     else:
         if koz in s1:
-            print('First')
+            print("First")
         else:
-            print('Second')
+            print("Second")

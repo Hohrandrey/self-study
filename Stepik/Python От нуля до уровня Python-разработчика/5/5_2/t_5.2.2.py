@@ -1,5 +1,6 @@
 from enum import Enum
 
+
 class OrderStatus(Enum):
     NEW = 1
     PAID = 2

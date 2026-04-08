@@ -5,9 +5,9 @@ res_num = int(input())
 
 res = "НЕТ"
 for i in range(n):
-    for j in range(i+1, n):
+    for j in range(i + 1, n):
         if kit[i] * kit[j] == res_num:
-            res = 'ДА'
+            res = "ДА"
             break
     if res == "ДА":
         break

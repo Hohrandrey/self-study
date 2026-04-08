@@ -1,9 +1,9 @@
 inp = input()
 
 letter = []
-let_count  = []
+let_count = []
 count = 1
-cur_letter = ''
+cur_letter = ""
 
 for i in range(len(inp)):
     if inp[i] != cur_letter:
@@ -20,6 +20,6 @@ let_count.append(count)
 
 for i in range(len(letter)):
     if let_count[i] == 1:
-        print(letter[i], end ='')
+        print(letter[i], end="")
     else:
-        print(str(let_count[i])+letter[i], end='')
+        print(str(let_count[i]) + letter[i], end="")

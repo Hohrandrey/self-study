@@ -1,10 +1,10 @@
 def gen_range(start, end):
-    for i in range (start, end):
+    for i in range(start, end):
         yield i
 
 
 def gen_symbols():
-    for elem in ['@', '#', '%']:
+    for elem in ["@", "#", "%"]:
         yield elem
 
 

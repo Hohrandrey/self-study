@@ -25,4 +25,4 @@ for i in range(rows):
         res_matr[i][j] = top + bottom + left + right
 
 for row in res_matr:
-    print(' '.join(map(str, row)))
+    print(" ".join(map(str, row)))

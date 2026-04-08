@@ -1,6 +1,6 @@
 import re
 
-string =  input()
+string = input()
 sub_str = r"RegEx"
 
 if re.match(sub_str, string):

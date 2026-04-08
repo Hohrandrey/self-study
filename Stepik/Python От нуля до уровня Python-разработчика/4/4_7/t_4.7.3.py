@@ -5,7 +5,7 @@ class NegativeCError(Exception):
 def compute(a, b, c):
     if c < 0:
         raise NegativeCError
-    return (a / b) + c ** 0.5
+    return (a / b) + c**0.5
 
 
 a = int(input())

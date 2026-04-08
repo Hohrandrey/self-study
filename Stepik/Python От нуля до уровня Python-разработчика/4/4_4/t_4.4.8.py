@@ -3,13 +3,11 @@ class ReversedRange:
         self.start = start
         self.end = end
 
-
     def __iter__(self):
         cur = self.end - 1
         while cur >= self.start:
             yield cur
             cur -= 1
-
 
 
 start = int(input())

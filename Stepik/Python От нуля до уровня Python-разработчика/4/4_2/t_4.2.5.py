@@ -3,10 +3,9 @@ class User:
         self.username = username
         self.email = email
 
-
     @classmethod
     def from_string(cls, user_string):
-        username, email = user_string.split(',')
+        username, email = user_string.split(",")
         return User(username, email)
 
 

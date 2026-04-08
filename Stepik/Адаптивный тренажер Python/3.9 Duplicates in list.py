@@ -6,4 +6,3 @@ for elem in inp:
 
 for i in sorted(set(res)):
     print(i)
-

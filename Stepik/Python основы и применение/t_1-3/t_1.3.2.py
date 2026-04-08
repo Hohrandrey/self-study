@@ -1,10 +1,13 @@
 def h():
-  print(12)
+    print(12)
+
 
 def f():
-  g(h)
+    g(h)
+
 
 def g(a):
-  a()
+    a()
+
 
 g(f)

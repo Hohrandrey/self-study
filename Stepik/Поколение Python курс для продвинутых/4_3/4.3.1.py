@@ -1,8 +1,8 @@
 n = int(input())
 
-sp  = []
+sp = []
 for _ in range(n):
-    sp.append(list(range(1, n+1)))
+    sp.append(list(range(1, n + 1)))
 
 
 for elem in sp:

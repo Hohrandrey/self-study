@@ -1,7 +1,7 @@
 import re
 
 string = input()
-res = re.match(r"file\.txt",string)
+res = re.match(r"file\.txt", string)
 
 if res:
     print("Found")

@@ -5,4 +5,4 @@ c = 0
 for elem in list1:
     c += len(elem)
     s += sum(elem)
-print(s/c)
+print(s / c)

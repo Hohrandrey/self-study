@@ -1,2 +1,2 @@
-def narcissistic( value ):
+def narcissistic(value):
     return False

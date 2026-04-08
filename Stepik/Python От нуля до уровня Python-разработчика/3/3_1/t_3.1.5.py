@@ -7,4 +7,4 @@ elif 50000 >= income >= 10000:
 else:
     tax = income * 0.1
 
-print(f'Ваш налог: {tax}')
+print(f"Ваш налог: {tax}")

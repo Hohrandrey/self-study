@@ -3,18 +3,16 @@ class Rectangle:
         self.width = width
         self.height = height
 
-
     @property
     def S(self):
         return self.width * self.height
 
-
     def __eq__(self, other):
         return self.S == other.S
 
-
     def __lt__(self, other):
         return self.S < other.S
+
 
 width = int(input())
 height = int(input())

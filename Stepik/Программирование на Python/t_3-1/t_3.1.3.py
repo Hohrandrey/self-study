@@ -9,7 +9,7 @@ def modify_list(lst):
 
 lst = [1, 2, 3, 4, 5, 6]
 print(modify_list(lst))  # None
-print(lst)               # [1, 2, 3]
+print(lst)  # [1, 2, 3]
 
 lst = [10, 5, 8, 3]
 modify_list(lst)

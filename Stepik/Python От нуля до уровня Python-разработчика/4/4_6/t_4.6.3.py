@@ -11,6 +11,7 @@ class Robot:
 def go(obj):
     obj.walk()
 
+
 human = Human()
 robot = Robot()
 go(human)

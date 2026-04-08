@@ -9,4 +9,4 @@ for word in word_list:
         res[len(word)] += 1
 
 for pr in sorted(res):
-    print(str(pr) + ':', res[pr])
+    print(str(pr) + ":", res[pr])

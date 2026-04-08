@@ -9,6 +9,7 @@ class Base:
         for i in range(x):
             self.add_one()
 
+
 class Derived(Base):
     def add_one(self):
         self.val += 10

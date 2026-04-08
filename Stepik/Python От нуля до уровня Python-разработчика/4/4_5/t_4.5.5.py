@@ -1,6 +1,6 @@
 class Singing:
     def sing(self):
-        print('Пою')
+        print("Пою")
 
 
 class Dancing:

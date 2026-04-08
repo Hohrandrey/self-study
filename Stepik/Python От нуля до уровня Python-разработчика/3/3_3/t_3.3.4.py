@@ -8,4 +8,4 @@ for elem in st:
     if int(elem) < mi:
         mi = int(elem)
 
-print(f'Минимальное число = {mi}, максимальное число = {ma}')
+print(f"Минимальное число = {mi}, максимальное число = {ma}")

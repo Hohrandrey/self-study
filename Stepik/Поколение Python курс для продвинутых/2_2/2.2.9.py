@@ -4,11 +4,11 @@ m_r_count = 0
 cur_count = 0
 
 
-if string == 'Р':
+if string == "Р":
     m_r_count = 1
 else:
     for elem in string:
-        if elem == 'Р':
+        if elem == "Р":
             cur_count += 1
         else:
             if cur_count > m_r_count:

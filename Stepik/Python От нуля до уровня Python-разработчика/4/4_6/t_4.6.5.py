@@ -1,7 +1,6 @@
-class Employee():
+class Employee:
     def __init__(self, name):
         self.name = name
-
 
     def get_salary(self):
         return 0
@@ -13,7 +12,6 @@ class HourlyEmployee(Employee):
         self.hours = hours
         self.rate = rate
 
-
     def get_salary(self):
         return self.hours * self.rate
 
@@ -23,7 +21,6 @@ class SalariedEmployee(Employee):
         super().__init__(name)
         self.salary = salary
 
-
     def get_salary(self):
         return self.salary
 
@@ -32,7 +29,6 @@ class Manager(SalariedEmployee):
     def __init__(self, name, salary, bonus):
         super().__init__(name, salary)
         self.bonus = bonus
-
 
     def get_salary(self):
         return super().get_salary() + self.bonus

@@ -1,5 +1,5 @@
 import math
 
-ch  = int(input())
+ch = int(input())
 
-print(f'Квадратный корень: {math.sqrt(ch)}')
+print(f"Квадратный корень: {math.sqrt(ch)}")
