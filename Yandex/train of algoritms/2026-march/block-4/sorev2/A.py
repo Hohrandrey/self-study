@@ -6,11 +6,12 @@ if n == 0:
 elif n % 2 != 0:
     print("NO")
 else:
+
     def is_valid(seq):
         stack = []
-        pairs = {')': '(', ']': '[', '}': '{'}
+        pairs = {")": "(", "]": "[", "}": "{"}
         for c in seq:
-            if c in '([{':
+            if c in "([{":
                 stack.append(c)
             else:
                 if not stack or stack[-1] != pairs[c]:

@@ -10,4 +10,4 @@ for _ in range(n):
             c += 1
     sp.append(c)
 
-print(*sp, sep='\n')
+print(*sp, sep="\n")

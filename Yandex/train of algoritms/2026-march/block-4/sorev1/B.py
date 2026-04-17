@@ -43,7 +43,7 @@ def solve():
                 clipboard = content
         elif cmd == "Paste":
             windows[current_window_idx] += clipboard
-        elif len(cmd) == 1 and 'a' <= cmd <= 'z':
+        elif len(cmd) == 1 and "a" <= cmd <= "z":
             windows[current_window_idx] += cmd
 
     final_content = windows[current_window_idx]

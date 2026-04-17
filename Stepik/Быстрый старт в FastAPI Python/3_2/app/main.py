@@ -13,11 +13,10 @@ db = [
 ]
 
 
-
 def cookie(id):
     user_id = id
     time_stamp = int(time.time())
-    signature = encrypt_decrypt(user_id+'.'+str(time_stamp))
+    signature = encrypt_decrypt(user_id + "." + str(time_stamp))
     session_token = f"{user_id}.{time_stamp}.{signature}"
 
     return session_token
@@ -34,12 +33,11 @@ async def login(user: user_login, response: Response):
                 value=session_token,
                 httponly=True,
                 max_age=300,
-                secure=False
+                secure=False,
             )
 
             return {"message": "Authorized successfully"}
     return {"message": "Unauthorized"}
-
 
 
 @app.get("/profile")
@@ -68,7 +66,6 @@ async def profile(response: Response, session_token=Cookie(None)):
         response.status_code = 401
         return {"message": "Session expired"}
 
-
     username = None
     password = None
     for elem in db:
@@ -87,6 +84,6 @@ async def profile(response: Response, session_token=Cookie(None)):
             value=new_session_token,
             httponly=True,
             max_age=300,
-            secure=False
+            secure=False,
         )
     return {"username": username, "password": password}
