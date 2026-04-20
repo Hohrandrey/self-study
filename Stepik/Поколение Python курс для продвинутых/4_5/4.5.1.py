@@ -10,5 +10,5 @@ for i in range(n):
 for i in range(n):
     for j in range(m):
         out = str(matrix[i][j]).ljust(3)
-        print(out, end='')
+        print(out, end="")
     print()
