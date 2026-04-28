@@ -2,7 +2,7 @@ def solve_task5():
     n = int(input())
     s = input()
 
-    VALID = {'T', 'O', 'I'}
+    VALID = {"T", "O", "I"}
 
     dp = [[0] * n for _ in range(n)]
 
@@ -27,5 +27,6 @@ def solve_task5():
             dp[i][j] = val
 
     print(dp[0][n - 1])
+
 
 solve_task5()

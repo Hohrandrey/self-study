@@ -20,4 +20,6 @@ for i in range(n):
             left += matrix[i][j]
 
 
-print(f"Верхняя четверть: {upper}\nПравая четверть: {right}\nНижняя четверть: {lower}\nЛевая четверть: {left}")
+print(
+    f"Верхняя четверть: {upper}\nПравая четверть: {right}\nНижняя четверть: {lower}\nЛевая четверть: {left}"
+)

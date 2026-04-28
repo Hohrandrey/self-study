@@ -5,7 +5,7 @@ matrix = []
 for i in range(n):
     line = []
     for j in range(m):
-        line.append(i*m+j+1)
+        line.append(i * m + j + 1)
     if i % 2 == 0:
         matrix.append(line)
     else:
@@ -13,5 +13,5 @@ for i in range(n):
 
 for i in range(n):
     for j in range(m):
-        print(str(matrix[i][j]).ljust(3), end = '')
+        print(str(matrix[i][j]).ljust(3), end="")
     print()

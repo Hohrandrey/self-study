@@ -24,4 +24,5 @@ def solve_task4():
         result = max(result, left_profit[i] + right_profit[i])
     return result
 
+
 print(solve_task4())

@@ -1,6 +1,6 @@
 def solve_task7():
-    n,x = map(int, input().split())
-    a = list(map(int,input().split()))
+    n, x = map(int, input().split())
+    a = list(map(int, input().split()))
 
     def count_coins(S):
         cnt = 0
@@ -21,10 +21,10 @@ def solve_task7():
         else:
             candidates.add(x)
 
-
-    ans = float('inf')
+    ans = float("inf")
     for y in candidates:
-        if y < x: continue
+        if y < x:
+            continue
         z = y - x
         c1 = count_coins(y)
         c2 = count_coins(z)
@@ -32,5 +32,6 @@ def solve_task7():
             ans = c1 + c2
 
     print(ans)
+
 
 solve_task7()

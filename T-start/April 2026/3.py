@@ -1,7 +1,7 @@
 def solve_task3():
-    n, m =  map(int, input().split())
+    n, m = map(int, input().split())
 
-    mod = 10 ** 9 + 7
+    mod = 10**9 + 7
 
     if n == 1:
         print((m * (m - 1)) % mod)
@@ -12,5 +12,6 @@ def solve_task3():
 
     ans = (first_col * pow(transition, n - 1, mod)) % mod
     print(ans)
+
 
 solve_task3()

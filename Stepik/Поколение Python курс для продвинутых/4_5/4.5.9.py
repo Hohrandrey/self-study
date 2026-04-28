@@ -16,7 +16,7 @@ vtor_diag = 0
 for i in range(n):
     sum_table = 0
     osnov_diag += matrix[i][i]
-    vtor_diag += matrix[n-1-i][i]
+    vtor_diag += matrix[n - 1 - i][i]
     if sum(matrix[i]) != sum_line:
         flag = False
     for j in range(n):
@@ -35,7 +35,7 @@ for line in matrix:
 
 
 for i in range(n**2):
-    if i+1 not in res_list:
+    if i + 1 not in res_list:
         flag = False
 
 

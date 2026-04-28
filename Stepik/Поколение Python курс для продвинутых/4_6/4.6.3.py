@@ -1,7 +1,7 @@
-n ,m = map(int, input().split())
+n, m = map(int, input().split())
 
 matrix = []
-cur_elem  = 1
+cur_elem = 1
 
 for i in range(n):
     line = []

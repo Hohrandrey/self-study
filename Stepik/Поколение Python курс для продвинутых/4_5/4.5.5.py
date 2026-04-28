@@ -9,7 +9,7 @@ for _ in range(n):
 for i in range(n):
     for j in range(n):
         if i == j:
-            matrix[i][j], matrix[n-1-i][j] = matrix[n-1-i][j], matrix[i][j]
+            matrix[i][j], matrix[n - 1 - i][j] = matrix[n - 1 - i][j], matrix[i][j]
 
 
 for line in matrix:
