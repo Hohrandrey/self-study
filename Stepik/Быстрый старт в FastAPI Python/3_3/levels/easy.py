@@ -3,6 +3,9 @@ import re
 
 app = FastAPI()
 
+def check_accept_language_header(accept_language):
+    pass
+
 
 @app.get("/headers")
 async def get_headers(user_agent: str = Header(None), accept_language: str = Header(None)):
