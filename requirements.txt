@@ -3,4 +3,3 @@ pydantic
 numpy
 requests
 environs
-automium_web
