@@ -8,6 +8,6 @@ for i in range(n):
     if int(fam_int.split()[-1]) in (4, 5):
         sp.append(fam_int)
 
-print(*sp_g,sep='\n')
+print(*sp_g, sep="\n")
 print()
-print(*sp,sep='\n')
+print(*sp, sep="\n")

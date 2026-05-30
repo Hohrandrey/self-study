@@ -1,2 +1,2 @@
-data = 'Python для продвинутых!'
+data = "Python для продвинутых!"
 print(tuple(data))
