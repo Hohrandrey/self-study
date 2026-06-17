@@ -1,5 +1,3 @@
-import copy
-
 n = int(input())
 matrix = []
 for i in range(n):
