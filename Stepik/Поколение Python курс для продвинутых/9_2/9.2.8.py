@@ -1,0 +1,5 @@
+m = int(input())
+n = int(input())
+math = set(input() for _ in range(m))
+inf = set(input() for _ in range(n))
+print(len(math ^ inf) or 'NO')
