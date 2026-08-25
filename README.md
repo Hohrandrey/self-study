@@ -10,6 +10,18 @@
 - [Платформа для обучения Stepic](https://stepik.org/learn)
 - [Платформа для обучения Codewars](https://www.codewars.com/dashboard)
 
+## Места для обучения
+
+- [Stepic (курсы)](https://stepik.org/learn)
+- [Яндекс лицей (курсы)](https://lyceum.yandex.ru/#selfpaced_courses)
+- [Яндекс Практикум (курсы)](https://practicum.yandex.ru/profile/python-free/)
+- [coddy (курсы)](https://coddy.tech/journeys/python/logic_and_flow)
+- [vk education (курсы)](https://education.vk.company)
+- [Coderun (алгоритмы)](https://coderun.yandex.ru)
+- [Leetcode (алгоритмы)](https://leetcode.com/problemset/)
+- [shadowhint (полезная информация по языкам)](https://shadowhint.com/questions?technologies=826ac86f-b7a5-43db-9e73-ab5cfbad431a)
+- [metanit (полезная информация по языкам)](https://metanit.com)
+
 ## Полезные репозитории и Git аккаунты:
 
 ### Репозитории:
