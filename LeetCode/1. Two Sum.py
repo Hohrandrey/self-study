@@ -1,9 +1,18 @@
+"""
 class Solution:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
-        res = set()
-        for j in range(len(nums) - 1):
-            for i in range(1, len(nums)):
+        n = len(nums)
+        for i in range(n):
+            for j in range(i+1, n):
                 if nums[i] + nums[j] == target:
-                    res.add(j)
-                    res.add(i)
-        return list(res)
+                    return [i, j]
+        return []
+"""
+
+class Solution:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
+        pass
+nums = [3, 2, 4]
+target = 6
+sol = Solution()
+print(sol.twoSum(nums, target))
