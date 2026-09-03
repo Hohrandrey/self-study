@@ -1,5 +1,6 @@
 import threading
 
+
 def solution():
     T, K = map(int, input().split())
 
@@ -21,9 +22,12 @@ def solution():
             outer((id_, i))
 
     threads = [threading.Thread(target=worker, args=(t,)) for t in range(T)]
-    for t in threads: t.start()
-    for t in threads: t.join()
+    for t in threads:
+        t.start()
+    for t in threads:
+        t.join()
 
     print(len(data))
+
 
 solution()

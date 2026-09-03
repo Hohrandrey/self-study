@@ -8,15 +8,15 @@ d = {
     "7": ["P", "Q", "R", "S"],
     "8": ["T", "U", "V"],
     "9": ["W", "X", "Y", "Z"],
-    "0": [" "]
+    "0": [" "],
 }
 
 inp = input()
-res =''
+res = ""
 for letter in inp:
     letter = letter.upper()
     for elems in d:
         if letter in d[elems]:
             ind = d[elems].index(letter)
-            res += elems*(ind+1)
+            res += elems * (ind + 1)
 print(res)

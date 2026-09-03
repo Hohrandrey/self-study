@@ -5,7 +5,7 @@ for _ in range(n):
     cur_klass = []
     for _ in range(k):
         student = input()
-        cur_klass.append('5' in student)
+        cur_klass.append("5" in student)
     res.append(any(cur_klass))
 
-print('YES' if all(res) else 'NO')
+print("YES" if all(res) else "NO")

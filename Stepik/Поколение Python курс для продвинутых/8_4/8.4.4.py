@@ -1,6 +1,13 @@
 fruits = {
-    'apple', 'banana', 'cherry', 'avocado', 'pineapple',
-    'apricot', 'banana', 'avocado', 'grapefruit',
+    "apple",
+    "banana",
+    "cherry",
+    "avocado",
+    "pineapple",
+    "apricot",
+    "banana",
+    "avocado",
+    "grapefruit",
 }
 
-print(*sorted(fruits, reverse=True), sep='\n')
+print(*sorted(fruits, reverse=True), sep="\n")

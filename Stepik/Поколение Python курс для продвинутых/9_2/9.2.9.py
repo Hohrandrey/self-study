@@ -1,1 +1,1 @@
-print(*sorted(set(input().split())|set(input().split())))
+print(*sorted(set(input().split()) | set(input().split())))

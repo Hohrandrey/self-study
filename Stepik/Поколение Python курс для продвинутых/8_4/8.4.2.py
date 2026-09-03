@@ -1,1 +1,1 @@
-print(sum(numbers)/len(numbers))
+print(sum(numbers) / len(numbers))

@@ -6,4 +6,4 @@ def scrabble(letters, word):
     return True
 
 
-print(scrabble('', 'abcde'))
+print(scrabble("", "abcde"))

@@ -1,4 +1,3 @@
-
 def mean(*args):
     s = 0
     count = 0
@@ -11,5 +10,5 @@ def mean(*args):
     return 0
 
 
-print(mean(1.5, True, ['stepik'], 'beegeek', 2.5, (1, 2)))
-print(mean(-1, 2, 3, 10, ('5')))
+print(mean(1.5, True, ["stepik"], "beegeek", 2.5, (1, 2)))
+print(mean(-1, 2, 3, 10, ("5")))

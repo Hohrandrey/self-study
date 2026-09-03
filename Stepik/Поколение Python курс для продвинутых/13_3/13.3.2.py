@@ -1,5 +1,5 @@
 f = complex(input())
 s = complex(input())
-print(f'{f} + {s} = {f+s}')
-print(f'{f} - {s} = {f-s}')
-print(f'{f} * {s} = {f*s}')
+print(f"{f} + {s} = {f+s}")
+print(f"{f} - {s} = {f-s}")
+print(f"{f} * {s} = {f*s}")

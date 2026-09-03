@@ -1,5 +1,6 @@
 import threading
 
+
 def solution():
     n, c = map(int, input().split())
     arr = list(map(int, input().split()))
@@ -21,7 +22,6 @@ def solution():
             buf.append(None)
             cond.notify_all()
 
-
     def consumer():
         nonlocal total
         # TODO: забирать элементы из buf, ждать если пусто
@@ -36,11 +36,13 @@ def solution():
                 total += item
                 cond.notify()
 
-
     tp = threading.Thread(target=producer)
     tc = threading.Thread(target=consumer)
-    tp.start(); tc.start()
-    tp.join(); tc.join()
+    tp.start()
+    tc.start()
+    tp.join()
+    tc.join()
     print(total)
+
 
 solution()

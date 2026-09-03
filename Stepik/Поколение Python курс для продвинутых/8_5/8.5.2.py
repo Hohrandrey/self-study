@@ -1,5 +1,5 @@
 n = int(input())
-st = ''
+st = ""
 for _ in range(n):
     st += input().lower()
 

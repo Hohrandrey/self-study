@@ -7,7 +7,7 @@ for _ in range(int(input())):
 
 
 for _ in range(int(input())):
-    res.append(dic_nums.get(input().lower(), ['абонент не найден']))
+    res.append(dic_nums.get(input().lower(), ["абонент не найден"]))
 
 for i in res:
     print(*i)

@@ -9,4 +9,4 @@ for _ in range(int(input())):
 
 for item in req:
     item = item.lower()
-    print(dic.get(item, 'Не найдено'))
+    print(dic.get(item, "Не найдено"))

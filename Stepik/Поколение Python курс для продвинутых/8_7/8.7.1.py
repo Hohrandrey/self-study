@@ -1,5 +1,5 @@
 res = set(input()).isdisjoint(set(input()))
 if not res:
-    print('YES')
+    print("YES")
 else:
-    print('NO')
+    print("NO")

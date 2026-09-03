@@ -7,7 +7,7 @@ for el in line:
     if num == 0:
         res.append(el)
     else:
-        res.append(el+f'_{num}')
+        res.append(el + f"_{num}")
     dic[el] = num + 1
 
 print(*res)

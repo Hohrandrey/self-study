@@ -6,6 +6,6 @@ for i in range(int(input())):
 
 
 for name in sorted(dic):
-    print(f'{name}:')
+    print(f"{name}:")
     for product in sorted(dic[name]):
-        print(f'{product} {dic[name][product]}')
+        print(f"{product} {dic[name][product]}")

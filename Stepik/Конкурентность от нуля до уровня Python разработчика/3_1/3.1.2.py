@@ -1,5 +1,6 @@
 import threading
 
+
 def solution():
     n = int(input().strip())
     arr = list(map(int, input().split()))
@@ -13,10 +14,10 @@ def solution():
     def summ():
         result["sum"] = sum(arr)
 
-
     t = threading.Thread(target=summ)
     t.start()
     t.join()
     print(result["sum"])
+
 
 solution()

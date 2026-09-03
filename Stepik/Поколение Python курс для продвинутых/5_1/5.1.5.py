@@ -10,6 +10,6 @@ for i in range(n):
             flag = False
 
 if flag:
-    print('YES')
+    print("YES")
 else:
-    print('NO')
+    print("NO")

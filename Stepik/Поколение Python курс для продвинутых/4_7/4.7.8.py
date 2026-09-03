@@ -6,7 +6,7 @@ for i in range(n):
 degree = int(input())
 sec_matrix = [row[:] for row in matrix]
 
-for _ in range(degree-1):
+for _ in range(degree - 1):
     temp = [[0 for _ in range(n)] for _ in range(n)]
     for i in range(n):
         for j in range(n):

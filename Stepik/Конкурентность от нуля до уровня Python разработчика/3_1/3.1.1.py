@@ -1,7 +1,9 @@
 import threading
 
+
 def worker():
-    print('worker')
+    print("worker")
+
 
 def solution():
     # TODO: создайте поток, который печатает "worker",
@@ -9,6 +11,7 @@ def solution():
     t = threading.Thread(target=worker)
     t.start()
     t.join()
-    print('done')
+    print("done")
+
 
 solution()

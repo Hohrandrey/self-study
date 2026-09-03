@@ -5,12 +5,12 @@ for i in range(n):
 
 comp = set(i + 1 for i in range(n))
 
-res = 'YES'
+res = "YES"
 for i in range(n):
     row = sorted(m[i])
     col = sorted(m[j][i] for j in range(n))
     if row != comp or col != comp:
-        flag = 'NO'
+        flag = "NO"
         break
 
 print(res)

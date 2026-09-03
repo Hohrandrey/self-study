@@ -1,4 +1,4 @@
-text = 'bridge snake island game glory eye arrogant car nature game glory game'
+text = "bridge snake island game glory eye arrogant car nature game glory game"
 result = {}
 for letter in set(text.split()):
     result[letter] = text.count(letter)

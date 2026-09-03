@@ -1,4 +1,3 @@
-
 def sq_sum(*args):
     return sum(map(lambda x: x * x, args))
 

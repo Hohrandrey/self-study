@@ -4,4 +4,5 @@ def transform(text):
         dic.setdefault(text[i], set()).add(i)
     return dic
 
-print(transform('Аметист'))
+
+print(transform("Аметист"))

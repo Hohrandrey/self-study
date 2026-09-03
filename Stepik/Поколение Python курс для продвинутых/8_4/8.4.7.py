@@ -1,4 +1,4 @@
-s = set(input()+input())
+s = set(input() + input())
 if len(s) == 10:
     print("YES")
 else:

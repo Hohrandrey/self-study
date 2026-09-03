@@ -1,5 +1,6 @@
 import threading
 
+
 class Demo(threading.Thread):
     def __init__(self, name):
         super().__init__(name=name)
@@ -8,6 +9,7 @@ class Demo(threading.Thread):
     def run(self):
         # TODO: сохранить имя текущего потока в self.where
         self.where = threading.current_thread().name
+
 
 def solution():
     mode = input().strip()
@@ -22,5 +24,6 @@ def solution():
         d.start()
         d.join()
         print(d.where)
+
 
 solution()

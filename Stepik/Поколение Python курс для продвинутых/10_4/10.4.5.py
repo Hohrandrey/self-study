@@ -11,4 +11,4 @@ for _ in range(int(input())):
         if z in value:
             res_ans.append(key)
 
-print(*res_ans, sep='\n')
+print(*res_ans, sep="\n")

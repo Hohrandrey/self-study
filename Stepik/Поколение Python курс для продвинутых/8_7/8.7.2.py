@@ -1,5 +1,5 @@
 res = set(input()).issuperset(set(input()))
 if res:
-    print('YES')
+    print("YES")
 else:
-    print('NO')
+    print("NO")
