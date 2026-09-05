@@ -22,24 +22,27 @@ def check(matrix):
         if all(cell == 'x' for cell in row):
             return True
 
-        # Проверка столбцов
     for j in range(n):
         if all(matrix[i][j] == 'x' for i in range(n)):
             return True
 
-        # Проверка главной диагонали
     if all(matrix[i][i] == 'x' for i in range(n)):
         return True
 
-        # Проверка побочной диагонали
     if all(matrix[i][n - 1 - i] == 'x' for i in range(n)):
         return True
 
     return False
 
-for el in a:
-    for i in range(n):
-        for j in range(n):
-            if matrix[i][j] == el:
-                matrix[i][j] = 'x'
-    print(check(matrix))
+def res():
+    c = 0
+    for el in a:
+        for i in range(n):
+            for j in range(n):
+                if matrix[i][j] == el:
+                    matrix[i][j] = 'x'
+                    c += 1
+        if check(matrix):
+            return c
+    return -1
+print(res())
