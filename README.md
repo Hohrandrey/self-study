@@ -39,6 +39,7 @@
 | Ресурс | Описание |
 | :--- | :--- |
 | [Learn Git Branching](https://learngitbranching.js.org/?locale=ru_RU) | Интерактивный тренажер по Git. Наглядно показывает, как работают ветки и слияния. |
+| [Roadmap.sh](https://roadmap.sh) | Road-map по различным направлениям |
 | [Полезные материалы Yandex](https://yandex.ru/yaintern/schools/useful) | Подборка лекций и статей для начинающих разработчиков. |
 | [Loecsen](https://www.loecsen.com/ru/kурсы-английский) | Изучение иностранных языков с акцентом на бытовую лексику. |
 
