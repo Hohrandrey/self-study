@@ -14,7 +14,7 @@
 ### 🎓 Образовательные платформы и курсы
 | Платформа | Описание |
 | :--- | :--- |
-| [Stepic](https://stepik.org/learn) | Классическая платформа с огромным выбором курсов от ведущих ВУЗов и компаний. |
+| [Stepik](https://stepik.org/learn) | Классическая платформа с огромным выбором курсов от ведущих ВУЗов и компаний. |
 | [Яндекс Лицей](https://lyceum.yandex.ru/#selfpaced_courses) | Бесплатные курсы по Python, Go и анализу данных от экспертов Яндекса. |
 | [Яндекс Практикум](https://practicum.yandex.ru/profile/python-free/) | Бесплатный вводный курс по Python с тренажерами. |
 | [Coddy](https://coddy.tech/journeys/python/logic_and_flow) | Интерактивное обучение программированию с игровым уклоном. |
@@ -61,7 +61,7 @@
 
 | Платформа | Ссылка на решения |
 | :--- | :--- |
-| **Stepic** | [Перейти к решениям →](https://github.com/Hohrandrey/self-study/tree/main/Stepic) |
+| **Stepik** | [Перейти к решениям →](https://github.com/Hohrandrey/self-study/tree/main/Stepik) |
 | **Codewars** | [Перейти к решениям →](https://github.com/Hohrandrey/self-study/tree/main/Codewars) |
 
 ---
