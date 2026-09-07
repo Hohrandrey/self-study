@@ -14,7 +14,7 @@
 ### 🎓 Образовательные платформы и курсы
 | Платформа | Описание |
 | :--- | :--- |
-| [Stepic](https://stepik.org/learn) | Классическая платформа с огромным выбором курсов от ведущих ВУЗов и компаний. |
+| [Stepik](https://stepik.org/learn) | Классическая платформа с огромным выбором курсов от ведущих ВУЗов и компаний. |
 | [Яндекс Лицей](https://lyceum.yandex.ru/#selfpaced_courses) | Бесплатные курсы по Python, Go и анализу данных от экспертов Яндекса. |
 | [Яндекс Практикум](https://practicum.yandex.ru/profile/python-free/) | Бесплатный вводный курс по Python с тренажерами. |
 | [Coddy](https://coddy.tech/journeys/python/logic_and_flow) | Интерактивное обучение программированию с игровым уклоном. |
@@ -26,6 +26,8 @@
 | [Coderun](https://coderun.yandex.ru) | Удобная площадка от Яндекса для отработки алгоритмических задач. |
 | [Codewars](https://www.codewars.com/dashboard) | Тренировка в стиле «боевых искусств» — повышайте свой ранг, решая задачи. |
 | [Leetcode](https://leetcode.com/problemset/) | Наиболее популярный ресурс для подготовки к собеседованиям в IT-гиганты. |
+| [Тренировки от Яндекса](https://yandex.ru/yaintern/training/index) | Обучение от Яндекса по различным направлениям |
+| [Cолвит](https://solvit.space/baza_voprosov) | Полный список вопросов с собеседований с ответами. Отвечайте на вопросы и отслеживайте свой прогресс |
 
 ### 📚 Справочники и документация
 | Ресурс | Описание |
@@ -37,6 +39,7 @@
 | Ресурс | Описание |
 | :--- | :--- |
 | [Learn Git Branching](https://learngitbranching.js.org/?locale=ru_RU) | Интерактивный тренажер по Git. Наглядно показывает, как работают ветки и слияния. |
+| [Roadmap.sh](https://roadmap.sh) | Road-map по различным направлениям |
 | [Полезные материалы Yandex](https://yandex.ru/yaintern/schools/useful) | Подборка лекций и статей для начинающих разработчиков. |
 | [Loecsen](https://www.loecsen.com/ru/kурсы-английский) | Изучение иностранных языков с акцентом на бытовую лексику. |
 
@@ -60,7 +63,7 @@
 
 | Платформа | Ссылка на решения |
 | :--- | :--- |
-| **Stepic** | [Перейти к решениям →](https://github.com/Hohrandrey/self-study/tree/main/Stepic) |
+| **Stepik** | [Перейти к решениям →](https://github.com/Hohrandrey/self-study/tree/main/Stepik) |
 | **Codewars** | [Перейти к решениям →](https://github.com/Hohrandrey/self-study/tree/main/Codewars) |
 
 ---
