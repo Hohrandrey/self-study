@@ -25,4 +25,4 @@ for key, val in dict_with_counts.items():
         ans.append(key)
 
 
-print(" ".join(sorted(ans)))
+print(*(sorted(ans)), sep='\n')
