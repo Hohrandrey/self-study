@@ -3,7 +3,7 @@ import sys
 def main():
     dict_of_brackets = {}
     inp_str = input()
-    stack = []  
+    stack = []
 
     if inp_str == '':
         return ''
