@@ -1,37 +1,32 @@
 def main():
-    dict_of_brackets_front = {'(': ')', '[': ']', '{': '}'}
-    dict_of_brackets_backs = {')': '(', ']': '[', '}': '{'}
-
+    dict_of_brackets = {'}':'{', ']':'[', ')':'('}
     n = int(input())
     w = input()
     s = input()
 
-    if len(s) == n:
-        return s
-    else:
-        start_string = s
-        end_string = ''
+    stack = []
 
-        while len(start_string) != n/2:
-
-            if start_string[-1] in dict_of_brackets_backs:
-                if w[0] in dict_of_brackets_front:
-                    start_string += w[0]
-                else:
-                    start_string += dict_of_brackets_backs[w[0]]
-            elif start_string[-1] in dict_of_brackets_front:
-                start_string += w[0]
+    for el in s:
+        if el not in dict_of_brackets:
+            stack.append(el)
+        else:
+            if stack and stack[-1] == dict_of_brackets[el]:
+                stack.pop()
 
 
-        for el in start_string:
-            if el in dict_of_brackets_backs:
-                end_string += dict_of_brackets_backs[el]
-            else:
-                end_string += dict_of_brackets_front[el]
-
-        res_string = start_string + end_string[::-1]
-        return res_string
+    while len(s) <= n:
+        for br in w:
+            if br not in dict_of_brackets and len(stack)+1<=n-len(s):
+                stack.append(br)
+                s += br
+                break
+            elif br in dict_of_brackets and len(stack) != 0 and stack[-1] == dict_of_brackets[br]:
+                if stack and stack[-1] == dict_of_brackets[br]:
+                    stack.pop()
+                    s += br
+                    break
+    print(s)
 
 
 if __name__ == '__main__':
-    print(main())
+    main()
