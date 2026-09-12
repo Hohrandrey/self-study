@@ -14,17 +14,16 @@ def main():
                 stack.pop()
 
 
-    while len(s) <= n:
+    while len(s) < n:
         for br in w:
             if br not in dict_of_brackets and len(stack)+1<=n-len(s):
                 stack.append(br)
                 s += br
                 break
-            elif br in dict_of_brackets and len(stack) != 0 and stack[-1] == dict_of_brackets[br]:
-                if stack and stack[-1] == dict_of_brackets[br]:
-                    stack.pop()
-                    s += br
-                    break
+            elif br in dict_of_brackets and stack and stack[-1] == dict_of_brackets[br]:
+                stack.pop()
+                s += br
+                break
     print(s)
 
 
