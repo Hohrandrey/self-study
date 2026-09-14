@@ -63,8 +63,10 @@
 
 | Платформа | Ссылка на решения |
 | :--- | :--- |
-| **Stepik** | [Перейти к решениям →](https://github.com/Hohrandrey/self-study/tree/main/Stepik) |
+| **CodeRun** | [Перейти к решениям →](https://github.com/Hohrandrey/self-study/tree/main/CodeRun) |
 | **Codewars** | [Перейти к решениям →](https://github.com/Hohrandrey/self-study/tree/main/Codewars) |
+| **LeetCode** | [Перейти к решениям →](https://github.com/Hohrandrey/self-study/tree/main/LeetCode) |
+| **Stepik** | [Перейти к решениям →](https://github.com/Hohrandrey/self-study/tree/main/Stepik) |
 
 ---
 
