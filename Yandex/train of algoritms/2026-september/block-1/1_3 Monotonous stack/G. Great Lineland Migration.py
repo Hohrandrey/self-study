@@ -4,7 +4,7 @@
 """
 def main():
     input()
-    string = input().split()
+    string = list(map(int, input().split()))
     stack = []
     ans = []
     for index, el in enumerate(string):
