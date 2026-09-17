@@ -13,8 +13,7 @@ def main():
         else:
             while stack and el < stack[-1][1]:
                 ans.append((stack.pop()[0], index))
-            else:
-                stack.append((index, el))
+            stack.append((index, el))
     for el in stack:
         ans.append((el[0], -1))
     print(*map(lambda el: el[1], sorted(ans)))
