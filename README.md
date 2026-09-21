@@ -19,6 +19,7 @@
 | [Яндекс Практикум](https://practicum.yandex.ru/profile/python-free/) | Бесплатный вводный курс по Python с тренажерами. |
 | [Coddy](https://coddy.tech/journeys/python/logic_and_flow) | Интерактивное обучение программированию с игровым уклоном. |
 | [VK Education](https://education.vk.company) | Курсы и лекции от VK по разработке, дизайну и управлению продуктами. |
+| [Хендбук основы python](https://education.yandex.ru/handbook/python) | Хендбук в котором разбирают устройство языка Python |
 
 ### ⚔️ Тренировка алгоритмов (Coding Challenge)
 | Платформа | Описание |
