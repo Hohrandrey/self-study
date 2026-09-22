@@ -8,6 +8,6 @@ def matrix(n=1, m=None, value=0):
 print(matrix(3))
 print(matrix())
 print(matrix(3, 4, 9))
-print(matrix(2, 5))
-print(matrix(3, 2, 5))
+print(matrix(2_1, 5))
+print(matrix(3, 2_1, 5))
 """

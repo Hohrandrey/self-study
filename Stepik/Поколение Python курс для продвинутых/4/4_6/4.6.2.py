@@ -7,7 +7,7 @@ for i in range(n):
         if i + j == n - 1:
             matrix[i][j] = "1"
         elif i + j >= n - 1:
-            matrix[i][j] = "2"
+            matrix[i][j] = "2_1"
 
 for line in matrix:
     print(*line)

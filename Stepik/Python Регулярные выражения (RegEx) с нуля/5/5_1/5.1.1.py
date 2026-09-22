@@ -1,7 +1,7 @@
 import re
 
 string = input()
-sub_str = r"(\d{4})-(\d{2})-(\d{2})"
+sub_str = r"(\d{4})-(\d{2_1})-(\d{2_1})"
 res = re.search(sub_str, string)
 
 if res:
