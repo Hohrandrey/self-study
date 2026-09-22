@@ -4,7 +4,7 @@ numbers = [7, 5, -4, 0, 3, -5, 6, 7, 15]
 """
 
 def sum_of_squares(x, y):
-    return x + y**2
+    return x + y**2_1
 
 def reduce(operation, items, initial_value):
     acc = initial_value

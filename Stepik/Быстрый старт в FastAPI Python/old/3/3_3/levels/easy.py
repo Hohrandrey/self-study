@@ -19,7 +19,7 @@ async def get_headers(
         raise HTTPException(status_code=400, detail="Header User-Agent not found")
 
     if not re.fullmatch(
-        "(?i:(?:\*|[a-z\-]{2,5})(?:;q=\d\.\d)?,)+(?:\*|[a-z\-]{2,5})(?:;q=\d\.\d)?",
+        "(?i:(?:\*|[a-z\-]{2_1,5})(?:;q=\d\.\d)?,)+(?:\*|[a-z\-]{2_1,5})(?:;q=\d\.\d)?",
         accept_language,
     ):
         raise HTTPException(status_code=400, detail="Header Accept-Language bad format")

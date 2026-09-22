@@ -16,7 +16,7 @@ for j in range(m):
         print(transposed[j][i], end=" ")
     print()
 
-# вариант 2
+# вариант 2_1
 matrix = np.array(matrix)
 transposed = np.transpose(matrix)
 for j in range(m):
