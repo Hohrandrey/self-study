@@ -5,6 +5,10 @@ http://localhost:8000/redoc — это альтернативный интерф
 
 ### Настройки проекта - https://stepik.org/lesson/1044666/step/8?unit=1053240
 
+### Виртуальное окружение - https://stepik.org/lesson/1044666/step/4?unit=1053240
+
+### Структуры проекта - https://stepik.org/lesson/1044666/step/3?unit=1053240
+
 ### Конечные точки в FastAPI - https://stepik.org/lesson/1044667/step/8?unit=1053241
 
 # Операции
