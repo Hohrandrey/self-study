@@ -1,0 +1,8 @@
+numpy
+requests
+fastapi
+pydantic
+pip
+pytest
+uvicorn
+itsdangerous
