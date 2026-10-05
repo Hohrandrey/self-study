@@ -1,7 +1,6 @@
 from fastapi import FastAPI, Response, Cookie, HTTPException
 from .models.user_model import user_login
 from uuid import uuid4
-from datetime import datetime
 from time import time
 from itsdangerous import URLSafeSerializer, SignatureExpired, BadSignature
 
@@ -29,12 +28,15 @@ id_serializer = URLSafeSerializer(secret_key="!!!Супер_Секретный_�
 
 @app.post('/login')
 async def login(user: user_login, response: Response):
-    s_id = str(uuid4())
-    timest = int(time())
-    session_token = id_serializer.dumps({"sid": s_id, "ld": timest})
     for el in dict_of_users:
         if el['username'] == user.username and el['password'] == user.password:
-            el['id'] = s_id
+            if not el['id']:
+                s_id = str(uuid4())
+                el['id'] = s_id
+            else:
+                s_id = el['id']
+            timest = int(time())
+            session_token = id_serializer.dumps({"sid": s_id, "ld": timest})
             response.set_cookie(key='session_token', value=session_token, httponly=True, max_age=300, secure=False)
             return el
     return "Неправильный логин или пароль"
@@ -43,17 +45,23 @@ async def login(user: user_login, response: Response):
 async def root():
     return dict_of_users
 
-#
+
 @app.get('/profile')
-async def profile(session_token = Cookie(None)):
+async def profile(response: Response, session_token = Cookie(None)):
+    try:
+        checked_id_and_date = id_serializer.loads(session_token, max_age=300)
+        checked_id = checked_id_and_date['sid']
+    except SignatureExpired:
+        raise HTTPException(status_code=401, detail={"message":"Session expired"})
+    except BadSignature:
+        raise HTTPException(status_code=401, detail={"message": "Invalid session"})
+
+
     for el in dict_of_users:
-        try:
-            checked_id_and_date = id_serializer.loads(session_token, max_age=180)
-            checked_id = checked_id_and_date['sid']
-        except SignatureExpired:
-            raise HTTPException(status_code=401, detail={"message":"Session expired"})
-        except BadSignature:
-            raise HTTPException(status_code=401, detail={"message": "Invalid session"})
+        timest = int(time())
+        if 180 <= timest - checked_id_and_date['ld'] <= 300:
+            session_token = id_serializer.dumps({"sid": checked_id, "ld": timest})
+            response.set_cookie(key='session_token', value=session_token, httponly=True, max_age=300, secure=False)
 
         if session_token and (checked_id in el.values()):
             return el
