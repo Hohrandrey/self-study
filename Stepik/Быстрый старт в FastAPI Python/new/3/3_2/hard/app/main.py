@@ -35,10 +35,12 @@ async def login(user: user_login, response: Response):
                 el['id'] = s_id
             else:
                 s_id = el['id']
+
             timest = int(time())
             session_token = id_serializer.dumps({"sid": s_id, "ld": timest})
             response.set_cookie(key='session_token', value=session_token, httponly=True, max_age=300, secure=False)
-            return el
+            return el, session_token
+
     return "Неправильный логин или пароль"
 
 @app.get('/')
@@ -47,7 +49,10 @@ async def root():
 
 
 @app.get('/profile')
-async def profile(response: Response, session_token = Cookie(None)):
+async def profile(response: Response, session_token: str = Cookie(None)):
+    if not session_token:
+        raise HTTPException(status_code=401, detail={"message": "Invalid session"})
+
     try:
         checked_id_and_date = id_serializer.loads(session_token, max_age=300)
         checked_id = checked_id_and_date['sid']
@@ -56,14 +61,17 @@ async def profile(response: Response, session_token = Cookie(None)):
     except BadSignature:
         raise HTTPException(status_code=401, detail={"message": "Invalid session"})
 
+    timest = int(time())
+    time_diff = timest - checked_id_and_date['ld']
+
+    if time_diff > 300:
+        raise HTTPException(status_code=401, detail={"message": "Session expired"})
+    elif 180 <= time_diff <= 300:
+        session_token = id_serializer.dumps({"sid": checked_id, "ld": timest})
+        response.set_cookie(key='session_token', value=session_token, httponly=True, max_age=300, secure=False)
 
     for el in dict_of_users:
-        timest = int(time())
-        if 180 <= timest - checked_id_and_date['ld'] <= 300:
-            session_token = id_serializer.dumps({"sid": checked_id, "ld": timest})
-            response.set_cookie(key='session_token', value=session_token, httponly=True, max_age=300, secure=False)
-
-        if session_token and (checked_id in el.values()):
-            return el
+        if checked_id == el['id']:
+            return el, session_token
 
     raise HTTPException(status_code=401, detail={"message": "Unauthorized"})
