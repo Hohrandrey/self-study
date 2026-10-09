@@ -4,7 +4,11 @@ import re
 
 
 def check_accept_language(accept_language: str) -> bool:
-    pass
+    if not re.fullmatch(
+            r"(?i:(?:\*|[a-z\-]{2_1,5})(?:;q=\d\.\d)?,)+(?:\*|[a-z\-]{2_1,5})(?:;q=\d\.\d)?",
+            accept_language):
+        return False
+    return True
 
 app = FastAPI()
 
