@@ -18,10 +18,10 @@ class CommonHeaders(BaseModel):
     @field_validator('x_current_version')
     @classmethod
     def x_current_version_validator(cls, x_current_version: str) -> str:
-        MINIMUM_APP_VERSION = "0.0.2".split('.')
+        MINIMUM_APP_VERSION = list(map(int, "0.0.2".split('.')))
         pattern = r'^\d+\.\d+\.\d+$'
         if not re.fullmatch(pattern, x_current_version):
             raise ValueError({"message": "Wrong structure x_current_version"})
-        if x_current_version.split('.') < MINIMUM_APP_VERSION:
+        if list(map(int, x_current_version.split('.'))) < MINIMUM_APP_VERSION:
             raise ValueError({"message": "Too old version"})
         return x_current_version
