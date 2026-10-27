@@ -1,5 +1,5 @@
 from .UserBase_model import UserBase
 
 
-class User(UserBase):
+class UserInDB(UserBase):
     hashed_password : str
