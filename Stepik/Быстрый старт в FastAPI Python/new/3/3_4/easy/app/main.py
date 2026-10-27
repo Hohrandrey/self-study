@@ -20,7 +20,12 @@ def identity_user(username: str):
 def authenticate_user(credentials: HTTPBasicCredentials = Depends(security)):
     user = identity_user(credentials.username)
     if user is None or user.password != credentials.password:
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid credentials")
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Invalid credentials",
+            headers={"WWW-Authenticate": "Basic"}
+        )
+    return user
 
 @app.get('/login')
 async def get_login(user: User = Depends(authenticate_user)):
