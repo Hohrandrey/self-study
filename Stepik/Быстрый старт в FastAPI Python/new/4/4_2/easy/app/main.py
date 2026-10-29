@@ -28,7 +28,7 @@ async def protected_resource(cur_user: str = Depends(get_user_from_token)):
         if user.get("username") == cur_user:
             return user
     raise HTTPException(
-        status_сode=status.HTTP_401_UNAUTHORIZED,
+        status_code=status.HTTP_401_UNAUTHORIZED,
         detail="User not found",
         headers={'WWW-Authenticate': 'Bearer'}
     )
