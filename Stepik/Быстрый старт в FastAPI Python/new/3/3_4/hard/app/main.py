@@ -12,7 +12,7 @@ fake_users_db = []
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 
-def auth_user(credentials: HTTPBasicCredentials = Depends(security)) -> User:
+def auth_user(credentials: HTTPBasicCredentials = Depends(security)) -> str:
     for el in fake_users_db:
         if (secrets.compare_digest(el.username.encode('utf-8'), credentials.username.encode('utf-8'))
                 and pwd_context.verify(credentials.password, el.hashed_password)):
