@@ -30,4 +30,6 @@ async def register(user: OAuth2PasswordRequestForm = Depends()):
 @app.post('/login')
 async def login(user):
     if not find_user_in_DB(user.username):
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="User not found")
+    else:
         pass
