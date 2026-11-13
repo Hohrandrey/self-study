@@ -3,6 +3,8 @@ from fastapi.security import OAuth2PasswordRequestForm
 from passlib.hash import bcrypt
 import secrets
 from .security import create_jwt_token, get_user_from_token
+from fastapi_limiter.depends import RateLimiter
+from pyrate_limiter import Duration, Limiter, Rate
 
 
 USERS_DATA = [
@@ -18,7 +20,9 @@ def find_user_in_DB(username):
     return None
 
 
-@app.post('/register')
+@app.post('/register',
+          dependencies=[Depends(RateLimiter(limiter=Limiter(Rate(1, 60))))]
+          )
 async def register(user: OAuth2PasswordRequestForm = Depends()):
     if find_user_in_DB(user.username):
         raise HTTPException(status_code=status.HTTP_409_CONFLICT,
@@ -31,7 +35,9 @@ async def register(user: OAuth2PasswordRequestForm = Depends()):
         return {"message":"New user created"}
 
 
-@app.post('/login')
+@app.post('/login',
+          dependencies=[Depends(RateLimiter(limiter=Limiter(Rate(5, 60))))]
+          )
 async def login(user: OAuth2PasswordRequestForm = Depends()):
     user_from_DB = find_user_in_DB(user.username)
     if not user:
